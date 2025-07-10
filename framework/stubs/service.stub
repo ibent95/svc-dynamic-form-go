@@ -1,0 +1,11 @@
+package services
+
+import "svc-dynamic-form-go/src/repositories"
+
+type {{Name}}Service struct {
+	Repo *repositories.{{Name}}Repository
+}
+
+func New{{Name}}Service(repo *repositories.{{Name}}Repository) *{{Name}}Service {
+	return &{{Name}}Service{Repo: repo}
+}

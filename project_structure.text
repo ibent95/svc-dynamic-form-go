@@ -1,0 +1,27 @@
+- .env
+- .gitignore
+- configs
+  - database.go
+  - routes.go
+- framework
+  - build.go
+  - commands
+  - controllers
+  - enums
+  - main.go
+  - middlewares
+  - models
+  - repositories
+  - services
+    - shared
+  - stubs
+- go.mod
+- go.sum
+- src
+  - commands
+  - controllers
+  - enums
+  - middlewares
+  - models
+  - repositories
+  - services

@@ -1,0 +1,5 @@
+package requests
+
+type {{Name}}Request struct {
+	Field string `json:"field" validate:"required"`
+}

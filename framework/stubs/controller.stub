@@ -1,0 +1,21 @@
+package controllers
+
+import (
+	"github.com/labstack/echo/v4"
+	"net/http"
+	"svc-dynamic-form-go/src/services"
+)
+
+type {{Name}}Controller struct {
+	Service *services.{{Name}}Service
+}
+
+func New{{Name}}Controller(service *services.{{Name}}Service) *{{Name}}Controller {
+	return &{{Name}}Controller{Service: service}
+}
+
+func (c *{{Name}}Controller) Index(ctx echo.Context) error {
+	return ctx.JSON(http.StatusOK, map[string]any{
+		"message": "Hello from {{name}} controller!",
+	})
+}

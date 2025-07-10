@@ -1,0 +1,7 @@
+package commands
+
+import "fmt"
+
+func {{Name}}Command() {
+	fmt.Println("Running {{name}} command...")
+}
